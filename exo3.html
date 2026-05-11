@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="exo3.css">
+    <style>
+      .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+      }
+      .box2 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(192, 113, 39);
+        position: relative;
+      }
+      .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(0, 255, 128);
+        position: relative;
+      }
+      .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+        position: relative;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+    <p>Dashboard jQuery</p>
+    <div class="btns">
+    <button class="btn menu-js">☰ Menu</button>
+    <button class="btn dark-mode-js">🌙 Dark Mode</button>
+    </div>
+</header>
+    <div style="display: flex; gap: 20px">
+      <div id="carte" class="carte">
+        <strong>Carte 1</strong><br />Animation jQuery
+      </div>
+      <div id="carte" class="carte">
+        <strong>Carte 2</strong><br />Manipulation DOM
+      </div>
+      <div id="carte" class="carte">
+        <strong>Carte 3</strong><br />Affets visuels
+      </div>
+    </div>
+    <h2>Contrôles</h2>
+    <button id="lancer">Lancer animation</button
+    ><button id="stop">Stop animation</button
+    ><button id="masquer">Masquer galerie</button
+    ><button id="afficher">Afficher galerie</button>
+    <div style="display: flex; gap: 20px">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</div>
+    <button>Afficher la notification</button>
+    <script src="exo3.js"></script>
+
+  </body>
+</html>
