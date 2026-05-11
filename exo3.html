@@ -1,46 +1,41 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="exo3.css">
-  
-  </head>
-
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboaed jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="exo3.css">
+</head>
+<body>
+  <header class="header">
     <p>Dashboard jQuery</p>
     <div class="btns">
-    <button class="btn menu-js">☰ Menu</button>
-    <button class="btn dark-mode-js">🌙 Dark Mode</button>
+      <button class="btn menu-js">☰ Menu</button>
+      <button class="btn dark-mode-js">🌙 Dark Mode</button>
     </div>
-</header>
-    <div style="display: flex; gap: 20px">
-      <div id="carte" class="carte">
-        <strong>Carte 1</strong><br />Animation jQuery
-      </div>
-      <div id="carte" class="carte">
-        <strong>Carte 2</strong><br />Manipulation DOM
-      </div>
-      <div id="carte" class="carte">
-        <strong>Carte 3</strong><br />Affets visuels
-      </div>
+  </header>
+  <section class="section cards-container">
+    <div class="cards">
+      <div class="card card-01-js"><strong> Carte 1 </strong> <br>Animation jQuery</div>
+      <div class="card card-02-js"><strong> Carte 2 </strong> <br>Manipulation DOM</div>
+      <div class="card card0-3-js"><strong> Carte 3 </strong> <br>Effets visuels</div>
     </div>
-    <h2>Contrôles</h2>
-    <button id="lancer">Lancer animation</button
-    ><button id="stop">Stop animation</button
-    ><button id="masquer">Masquer galerie</button
-    ><button id="afficher">Afficher galerie</button>
-    <div style="display: flex; gap: 20px">
+  </section>
+  <section class="section">
+  <h2>Contrôles</h2>
+  <button id="lancer">Lancer animation</button><button id="stop">Stop animation</button><button id="masquer">Masquer
+    galerie</button><button id="afficher">Afficher galerie</button>
+  <div style="display: flex; gap: 20px">
     <div class="box1"></div>
     <div class="box2"></div>
     <div class="box3"></div>
     <div class="box4"></div>
-</div>
-    <button>Afficher la notification</button>
-    <script src="exo3.js"></script>
+  </div>
+  <button>Afficher la notification</button>
+  </section>
+  <script src="exo3.js"></script>
 
-  </body>
+</body>
+
 </html>
