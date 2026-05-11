@@ -1,6 +1,6 @@
-const btnDarkMode=document.querySelector(".dark-mode-js")
-btnDarkMode.addEventListener("click",function(){
-   document.body.classList.toggle("bodyDarkMode")
+
+$(".dark-mode-js").on("click",function(){
+   $("body").toggleClass("bodyDarkMode")
 })
 
 $("#carte").click(function(){
