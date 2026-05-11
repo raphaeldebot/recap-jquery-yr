@@ -12,7 +12,7 @@ $(".card-01-js").on("click", function () {
 });
 
 $(".card-02-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this).html("<strong>DOM</strong> <small>updated</small>");
 });
 
 $(".card-03-js").on("click", function () {
@@ -57,3 +57,14 @@ $(".box3").click(function () {
 $(".box4").click(function () {
   $(this).animate({ rotate: "+=360deg" });
 });
+
+// -------------------
+
+// NOTIFICATION BTN
+$(".btn-notif-js").on("click", function () {
+  $(".notification").animate({ bottom: "130px" }, 600);
+  setTimeout(()=>{
+    $(".notification").animate({ bottom: "-100px" }, 600)
+  },2000)
+});
+// -------------------
