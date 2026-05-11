@@ -8,7 +8,7 @@ $(".dark-mode-js").on("click", function () {
 // -------------------
 // CARDS
 $(".card-01-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this).animate({ bottom: "20px" ,opacity:0.6}, 700).animate({ bottom: "0" ,opacity:1}, 400,"swing");
 });
 
 $(".card-02-js").on("click", function () {
