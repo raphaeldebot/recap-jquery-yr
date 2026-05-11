@@ -1,8 +1,29 @@
-
+// DARK MODE 
 $(".dark-mode-js").on("click",function(){
-   $("body").toggleClass("bodyDarkMode");
-});
+   $("body").toggleClass("bodyDarkMode")
+})
+// -------------------
+// MENU
 
+// -------------------
+// CARDS
+$(".card-01-js").on("click",function(){
+   $(this).animate({bottom:"20px"},2000,function(){
+      $(this).animate({bottom:"0"},2000)
+   })
+})
+$(".card-02-js").on("click",function(){
+   
+})
+$(".card-03-js").on("click",function(){
+  
+})
+
+
+
+// -------------------
+
+// CONTROLS
 $("#carte").click(function(){
         $(this).css("border","1px solid blue");
        });
