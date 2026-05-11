@@ -24,6 +24,7 @@ $(".card-03-js").on("click", function () {
 // CONTROLS
 $("#lancer").click(function () {
   $(".box1")
+  
     .animate({ left: "100px" })
     .animate({ top: "100px" }, function () {
       $(".box1").css("backgroundColor", "red");
@@ -38,6 +39,7 @@ $("#stop").click(function () {
 
 $(".box1").click(function () {
   $(this)
+  .addClass("active")
     .animate({ left: "+=100px" })
     .animate({ top: "+=100px" }, function () {
       $(this).css("backgroundColor", "red");
