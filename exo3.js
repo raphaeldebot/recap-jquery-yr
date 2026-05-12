@@ -8,11 +8,11 @@ $(".dark-mode-js").on("click", function () {
 // -------------------
 // CARDS
 $(".card-01-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this).animate({ bottom: "20px" ,opacity:0.6}, 700).animate({ bottom: "0" ,opacity:1}, 400,"swing");
 });
 
 $(".card-02-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this).html("<strong>DOM</strong> <small>updated</small>");
 });
 
 $(".card-03-js").on("click", function () {
@@ -58,6 +58,17 @@ $("#stop").click(function () {
   $(".box1,.box2,.box3,.box4").stop(true,false);
  });
 
+$(".box4").click(function () {
+  $(this).animate({ rotate: "+=360deg" });
+});
+// NOTIFICATION BTN
+$(".btn-notif-js").on("click", function () {
+  $(".notification").animate({ bottom: "130px" }, 600);
+  setTimeout(()=>{
+    $(".notification").animate({ bottom: "-100px" }, 600)
+  },2000)
+});
+// -------------------
  
  $("#afficher").click(function() {
   $(".animBox").slideDown(600)
