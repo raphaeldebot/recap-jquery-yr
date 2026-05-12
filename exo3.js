@@ -8,15 +8,26 @@ $(".dark-mode-js").on("click", function () {
 // -------------------
 // CARDS
 $(".card-01-js").on("click", function () {
-  $(this).animate({ bottom: "20px" ,opacity:0.6}, 700).animate({ bottom: "0" ,opacity:1}, 400,"swing");
+  $(this)
+    .animate({ bottom: "20px", opacity: 0.6 }, 700)
+    .animate({ bottom: "0", opacity: 1 }, 400, "swing");
 });
 
 $(".card-02-js").on("click", function () {
   $(this).html("<strong>DOM</strong> <small>updated</small>");
 });
 
+let deg = 0;
 $(".card-03-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this)
+    .css({
+      transform: `rotate(${(deg += 360)}deg)`,
+      backgroundColor: "green",
+    })
+    .animate({ left: "100px" }, 250)
+    .animate({ left: "0px" }, 250, function () {
+      $(this).css("backgroundColor", "#ffffff");
+    });
 });
 
 // -------------------
@@ -60,8 +71,8 @@ $(".box4").click(function () {
 // NOTIFICATION BTN
 $(".btn-notif-js").on("click", function () {
   $(".notification").animate({ bottom: "130px" }, 600);
-  setTimeout(()=>{
-    $(".notification").animate({ bottom: "-100px" }, 600)
-  },2000)
+  setTimeout(() => {
+    $(".notification").animate({ bottom: "-100px" }, 600);
+  }, 2000);
 });
 // -------------------
