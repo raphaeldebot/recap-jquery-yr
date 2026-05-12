@@ -22,37 +22,41 @@ $(".card-03-js").on("click", function () {
 // -------------------
 
 // CONTROLS
+
+$(".box1, .box2, .box3, .box4").click(function () {
+  $(".box1, .box2, .box3, .box4").removeClass("active");
+  $(this).addClass("active");
+});
+
+
 $("#lancer").click(function () {
-  $(".box1")
-    .animate({ left: "100px" })
+  let activeBox = $(".active");
+
+  if (activeBox.hasClass("box1")) {
+    activeBox.animate({ left: "100px" })
     .animate({ top: "100px" }, function () {
-      $(".box1").css("backgroundColor", "red");
+      $(this).css("backgroundColor", "red");
     })
     .animate({ left: "0px" })
     .animate({ top: "0px" });
+  }
+
+  if (activeBox.hasClass("box2")) {
+    activeBox.animate({ borderRadius: "50%" });
+  }
+
+  if (activeBox.hasClass("box3")) {
+    activeBox.animate({ left: "100px" });
+  }
+
+  if (activeBox.hasClass("box4")) {
+    activeBox.animate({ rotate: "+=360deg" });
+  }
 });
 
 $("#stop").click(function () {
-  $(".box1").stop();
-});
-
-$(".box1").click(function () {
-  $(this)
-    .animate({ left: "+=100px" })
-    .animate({ top: "+=100px" }, function () {
-      $(this).css("backgroundColor", "red");
-    })
-    .animate({ left: "-=100px" })
-    .animate({ top: "-=100px" });
-});
-
-$(".box2").click(function () {
-  $(this).animate({ BorderRadius: "50%" });
-});
-
-$(".box3").click(function () {
-  $(this).animate({ left: "100px" });
-});
+  $(".box1,.box2,.box3,.box4").stop(true,false);
+ });
 
 $(".box4").click(function () {
   $(this).animate({ rotate: "+=360deg" });
@@ -65,3 +69,12 @@ $(".btn-notif-js").on("click", function () {
   },2000)
 });
 // -------------------
+ 
+ $("#afficher").click(function() {
+  $(".animBox").slideDown(600)
+ })
+
+
+ $("#masquer").click(function() {
+  $(".animBox").slideUp(600)
+ })
