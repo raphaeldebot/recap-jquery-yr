@@ -15,7 +15,8 @@ $(".card-01-js").on("click", function () {
 
 $(".card-02-js").on("click", function () {
   $(this).html('<img class="img" src="https://www.horilla.com/wp-content/uploads/2024/04/what-are-the-features-and-advantages-of-jquery.jpg">'
-    );
+    )
+    $(".img").fadeTo(3000,1);
 });
 
 let deg = 0;
@@ -92,7 +93,7 @@ $(".box4").click(function () {
 $(".btn-notif-js").on("click", function () {
   $(".notification").animate({ bottom: "190px",left:"200px"}, 600);
   setTimeout(() => {
-    $(".notification").animate({ bottom: "-100px" ,left:"200px"} ,600);
+    $(".notification").animate({ bottom: "-1000px" ,left:"200px"} ,600);
   }, 2000);
 });
 
