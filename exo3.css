@@ -40,6 +40,7 @@ body {
 
 .btns {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -147,8 +148,9 @@ p {
 .notification {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   bottom: -100px;
+  left: 200px;
   border: 1px solid #3B6D11;
   background: rgba(0, 128, 0, 0.5);
   color: var(--white);
