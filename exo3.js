@@ -90,9 +90,9 @@ $(".box4").click(function () {
 
 // NOTIFICATION BTN
 $(".btn-notif-js").on("click", function () {
-  $(".notification").animate({ bottom: "190px"}, 600);
+  $(".notification").animate({ bottom: "190px",left:"200px"}, 600);
   setTimeout(() => {
-    $(".notification").animate({ bottom: "-100px" } ,600);
+    $(".notification").animate({ bottom: "-100px" ,left:"200px"} ,600);
   }, 2000);
 });
 
