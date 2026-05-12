@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="exo3.css">
 </head>
+
 <body>
   <header class="header">
     <p>Dashboard jQuery</p>
@@ -23,19 +25,28 @@
     </div>
   </section>
   <section class="section">
-  <h2>Contrôles</h2>
-  <button id="lancer">Lancer animation</button><button id="stop">Stop animation</button><button id="masquer">Masquer
-    galerie</button><button id="afficher">Afficher galerie</button>
-  <div class="animBox" style="display: flex; gap: 20px">
-    <div class="box1"></div>
-    <div class="box2"></div>
-    <div class="box3"></div>
-    <div class="box4"></div>
-  </div>
+    <h2>Contrôles</h2>
+    <button id="lancer">Lancer animation</button><button id="stop">Stop animation</button><button id="masquer">Masquer
+      galerie</button><button id="afficher">Afficher galerie</button>
+    <div class="animBox" style="display: flex; gap: 20px">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+    </div>
   </section>
   <section class="section">
     <button class="btn btn-notif-js">Afficher la notification</button>
     <p class="notification"> <img class="icon" src="../notification.png" width="20" alt=""> There is a notification</p>
+  </section>
+  <section class="section">
+
+    <h2>Manipulation attr()</h2>
+    <form action="">
+      <input id="inputAnim" type="text" placeholder="Votre nom" disabled>
+    </form>
+    <button type="button" id="enableBtn">Activé le champ</button>
+    <button type="button" id="disableBtn">Désactivé le champ</button>
   </section>
   <script src="exo3.js"></script>
 

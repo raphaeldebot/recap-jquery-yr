@@ -34,13 +34,13 @@ $(".card-03-js").on("click", function () {
 // -------------------
 
 // CONTROLS
-
+// select animation
 $(".box1, .box2, .box3, .box4").click(function () {
   $(".box1, .box2, .box3, .box4").removeClass("active");
   $(this).addClass("active");
 });
 
-
+// play the selected animation
 $("#lancer").click(function () {
   let activeBox = $(".active");
 
@@ -66,6 +66,8 @@ $("#lancer").click(function () {
   }
 });
 
+
+// stop animation
 $("#stop").click(function () {
   $(".box1,.box2,.box3,.box4").stop(true,false);
  });
@@ -73,6 +75,19 @@ $("#stop").click(function () {
 $(".box4").click(function () {
   $(this).animate({ rotate: "+=360deg" });
 });
+
+// Show animation gallerie
+ 
+ $("#afficher").click(function() {
+  $(".animBox").slideDown(600)
+ })
+
+// Hide animation gallerie
+ $("#masquer").click(function() {
+  $(".animBox").slideUp(600)
+ })
+
+
 // NOTIFICATION BTN
 $(".btn-notif-js").on("click", function () {
   $(".notification").animate({ bottom: "130px" }, 600);
@@ -80,14 +95,17 @@ $(".btn-notif-js").on("click", function () {
     $(".notification").animate({ bottom: "-100px" }, 600);
   }, 2000);
 });
-// -------------------
- 
- $("#afficher").click(function() {
-  $(".animBox").slideDown(600)
- })
 
+// Input activate/disable
 
  $("#masquer").click(function() {
   $(".animBox").slideUp(600)
  })
 
+$("#enableBtn").click(function(){
+  $("#inputAnim").removeAttr('disabled')
+})
+
+$("#disableBtn").click(function(){
+  $("#inputAnim").attr('disabled','disabled')
+})
