@@ -45,6 +45,7 @@ body {
 p {
   color: white;
   font-size: 22px;
+
 }
 /* ----------------- */
 /* SECTION CARDS */
@@ -56,6 +57,7 @@ p {
 .card {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 20px;
+  overflow: hidden;
   background-color: var(--white);
   border-radius: 10px;
   border: 2px solid transparent;
@@ -71,7 +73,17 @@ p {
 border-color:blue;
 width: 200px;
 }
-
+.card:nth-child(3){
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.img{
+  margin: -20px -20px; 
+  width: calc(100% + 40px); 
+  height: 81px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
 /* ----------------- */
 .box1 {
   width: 100px;
@@ -99,9 +111,18 @@ width: 200px;
 }
 /* NOTIFICATION BTN */
 .notification{
+  display: flex;
+  align-items: center;
   position: fixed;
   bottom: -100px;
-background-color: lightgreen;
-padding: 10px;
-border-radius: 10px;
+  border: 1px solid #3B6D11;
+  background: rgba(0, 128, 0,0.5);
+  color: var(--white);
+padding: 8px;
+border-radius: 12px;
+font-size: 18px;
+}
+.icon{
+  margin-right: 4px;
+
 }

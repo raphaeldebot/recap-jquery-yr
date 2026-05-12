@@ -8,15 +8,27 @@ $(".dark-mode-js").on("click", function () {
 // -------------------
 // CARDS
 $(".card-01-js").on("click", function () {
-  $(this).animate({ bottom: "20px" ,opacity:0.6}, 700).animate({ bottom: "0" ,opacity:1}, 400,"swing");
+  $(this)
+    .animate({ bottom: "20px", opacity: 0.6 }, 700)
+    .animate({ bottom: "0", opacity: 1 }, 400, "swing");
 });
 
 $(".card-02-js").on("click", function () {
-  $(this).html("<strong>DOM</strong> <small>updated</small>");
+  $(this).html('<img class="img" src="https://www.horilla.com/wp-content/uploads/2024/04/what-are-the-features-and-advantages-of-jquery.jpg">'
+    );
 });
 
+let deg = 0;
 $(".card-03-js").on("click", function () {
-  $(this).animate({ bottom: "20px" }, 600).animate({ bottom: "0" }, 300);
+  $(this)
+    .css({
+      transform: `rotate(${(deg += 360)}deg)`,
+      backgroundColor: "#1b9a72",
+    })
+    .animate({ left: "100px" }, 250)
+    .animate({ left: "0px" }, 250, function () {
+      $(this).css("backgroundColor", "#ffffff");
+    });
 });
 
 // -------------------
@@ -79,12 +91,16 @@ $(".box4").click(function () {
 // NOTIFICATION BTN
 $(".btn-notif-js").on("click", function () {
   $(".notification").animate({ bottom: "130px" }, 600);
-  setTimeout(()=>{
-    $(".notification").animate({ bottom: "-100px" }, 600)
-  },2000)
+  setTimeout(() => {
+    $(".notification").animate({ bottom: "-100px" }, 600);
+  }, 2000);
 });
 
 // Input activate/disable
+
+ $("#masquer").click(function() {
+  $(".animBox").slideUp(600)
+ })
 
 $("#enableBtn").click(function(){
   $("#inputAnim").removeAttr('disabled')
