@@ -49,6 +49,8 @@ body {
   border: none;
   border-radius: 5px;
   background-color: var(--white);
+  position: relative;
+  z-index: 1000;
 }
 
 p {
@@ -150,7 +152,7 @@ p {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: -100px;
+  bottom: -1000px;
   left: 200px;
   border: 1px solid #3B6D11;
   background: rgba(0, 128, 0, 0.5);
