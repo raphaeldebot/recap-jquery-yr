@@ -14,7 +14,8 @@ $(".card-01-js").on("click", function () {
 });
 
 $(".card-02-js").on("click", function () {
-  $(this).html("<strong>DOM</strong> <small>updated</small>");
+  $(this).html('<img class="img" src="https://www.horilla.com/wp-content/uploads/2024/04/what-are-the-features-and-advantages-of-jquery.jpg">'
+    );
 });
 
 let deg = 0;
@@ -22,7 +23,7 @@ $(".card-03-js").on("click", function () {
   $(this)
     .css({
       transform: `rotate(${(deg += 360)}deg)`,
-      backgroundColor: "green",
+      backgroundColor: "#1b9a72",
     })
     .animate({ left: "100px" }, 250)
     .animate({ left: "0px" }, 250, function () {
