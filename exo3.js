@@ -15,7 +15,8 @@ $(".card-01-js").on("click", function () {
 
 $(".card-02-js").on("click", function () {
   $(this).html('<img class="img" src="https://www.horilla.com/wp-content/uploads/2024/04/what-are-the-features-and-advantages-of-jquery.jpg">'
-    );
+    )
+    $("img").fadeTo(3000,1);
 });
 
 let deg = 0;
