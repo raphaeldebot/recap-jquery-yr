@@ -72,9 +72,20 @@ $("#stop").click(function () {
   $(".box1,.box2,.box3,.box4").stop(true,false);
  });
 
-$(".box4").click(function () {
-  $(this).animate({ rotate: "+=360deg" });
+
+// clear animation
+$("#clear").click(function () {
+
+  // clear positions
+  $(".box1,.box3").css({left: "0px", top: "0px"});
+
+  // clear border radius
+  $(".box2").css({ borderRadius: "10px"});
+
+  // clear active class
+  $(".box1, .box2, .box3, .box4").removeClass("active");
 });
+
 
 // Show animation gallerie
  
