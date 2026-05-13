@@ -102,9 +102,10 @@ $("#clear").click(function () {
 
 // NOTIFICATION BTN
 $(".btn-notif-js").on("click", function () {
-  $(".notification").animate({ bottom: "190px",left:"200px"}, 600);
-  setTimeout(() => {
-    $(".notification").animate({ bottom: "-1000px" ,left:"200px"} ,600);
+  $(".notification").fadeTo(200,1);
+
+  setTimeout(function () {
+    $(".notification").fadeOut(300);
   }, 2000);
 });
 
